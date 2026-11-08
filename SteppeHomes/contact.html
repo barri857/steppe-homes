@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Explore sample homes in Astana with Steppe Homes, a student real estate website.">
+    <title>Contact | Steppe Homes</title>
+    <link rel="icon" href="assets/hero.svg" type="image/svg+xml">
+    <link rel="stylesheet" href="assets/vendor/bootstrap-grid.min.css">
+    <link rel="stylesheet" href="assets/style.css">
+    <script src="assets/vendor/jquery.min.js" defer></script>
+    <script src="assets/script.js" defer></script>
+  </head>
+  <body>
+    <a class="skip-link" href="#main">Skip to content</a>
+    <header class="site-header">
+      <div class="container header-inner">
+        <a class="brand" href="index.html" aria-label="Steppe Homes home"><span class="brand-icon" aria-hidden="true">⌂</span> Steppe<span>Homes</span></a>
+        <button class="nav-toggle" type="button" aria-controls="main-nav" aria-expanded="false">Menu <span aria-hidden="true">☰</span></button>
+        <nav id="main-nav" class="main-nav" aria-label="Main navigation">
+          <a href="index.html">Home</a>
+          <a href="properties.html">Properties</a>
+          <a href="about.html">About</a>
+          <a href="contact.html" class="active" aria-current="page">Contact</a>
+        </nav>
+      </div>
+    </header>
+    <main id="main" tabindex="-1">
+      <section class="page-intro">
+        <div class="container">
+          <p class="eyebrow">LET’S TALK ABOUT HOME</p>
+          <h1>What does home look like to you?</h1>
+          <p class="lead">Share your preferences using the enquiry form below.</p>
+        </div>
+      </section>
+      <section class="section contact-section">
+        <div class="container">
+          <div class="row g-5">
+            <div class="col-lg-5">
+              <h2>Start a conversation.</h2>
+              <p>Interested in one of the sample homes? Choose it in the form and tell us what you would like to know.</p>
+              <div class="contact-detail">
+                <span class="eyebrow">EMAIL</span>
+                <a href="mailto:hello@steppehomes.example">steppehomes@gmail.com</a>
+              </div>
+              <div class="contact-detail">
+                <span class="eyebrow">LOCATION</span>
+                <p>Sample office · Astana, Kazakhstan</p>
+              </div>
+              <div class="demo-note">
+                <strong>A quick note</strong>
+                <p>This is a student project. Contact details are examples. The form validates your input, but does not send or store messages.</p>
+              </div>
+            </div>
+            <div class="col-lg-7">
+              <form id="contact-form" class="contact-form" novalidate>
+                <p class="form-note">All fields are required.</p>
+                <div class="row g-3">
+                  <div class="col-md-6 form-field">
+                    <label for="full-name">Full name</label>
+                    <input id="full-name" name="name" autocomplete="name" minlength="2" maxlength="80" required aria-describedby="name-error">
+                    <span class="field-error" id="name-error"></span>
+                  </div>
+                  <div class="col-md-6 form-field">
+                    <label for="email">Email address</label>
+                    <input id="email" name="email" type="email" autocomplete="email" maxlength="120" required aria-describedby="email-error">
+                    <span class="field-error" id="email-error"></span>
+                  </div>
+                  <div class="col-12 form-field">
+                    <label for="interest">I am interested in</label>
+                    <select id="interest" name="interest" required aria-describedby="interest-error">
+                      <option value="">Choose a property or topic</option>
+                      <option value="general">General enquiry</option>
+                      <option value="riverside">Nexpo Aura</option>
+                      <option value="courtyard">W towers</option>
+                      <option value="townhouse">Дом на Ботаническом</option>
+                      <option value="skyline">Dara Residence</option>
+                    </select>
+                    <span class="field-error" id="interest-error"></span>
+                  </div>
+                  <div class="col-12 form-field">
+                    <label for="message">Your message</label>
+                    <textarea id="message" name="message" rows="5" minlength="10" maxlength="1000" required aria-describedby="message-help message-error"></textarea>
+                    <span id="message-help" class="small-note">Please enter 10–1,000 characters.</span>
+                    <span class="field-error" id="message-error"></span>
+                  </div>
+                  <div class="col-12">
+                    <button class="button" type="submit">Submit enquiry <span aria-hidden="true">↗</span></button>
+                  </div>
+                </div>
+                <div id="form-status" class="form-status" role="status" aria-live="polite" hidden></div>
+              </form>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+    <footer class="site-footer">
+      <div class="container footer-inner">
+        <div>
+          <a class="brand" href="index.html">Steppe<span>Homes</span></a>
+          <p>A place to start your next chapter.</p>
+        </div>
+        <div class="footer-note">
+          <a href="mailto:hello@steppehomes.example">steppehomes@gmail.com</a>
+          <p>© 2026 Steppe Homes · Student project · Sample listings</p>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>

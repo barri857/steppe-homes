@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Explore sample homes in Astana with Steppe Homes, a student real estate website.">
+    <title>Home | Steppe Homes</title>
+    <link rel="icon" href="assets/hero.svg" type="image/svg+xml">
+    <link rel="stylesheet" href="assets/vendor/bootstrap-grid.min.css">
+    <link rel="stylesheet" href="assets/style.css">
+    <script src="assets/vendor/jquery.min.js" defer></script>
+    <script src="assets/script.js" defer></script>
+  </head>
+  <body>
+    <a class="skip-link" href="#main">Skip to content</a>
+    <header class="site-header">
+      <div class="container header-inner">
+        <a class="brand" href="index.html" aria-label="Steppe Homes home"><span class="brand-icon" aria-hidden="true">⌂</span> Steppe<span>Homes</span></a>
+        <button class="nav-toggle" type="button" aria-controls="main-nav" aria-expanded="false">Menu <span aria-hidden="true">☰</span></button>
+        <nav id="main-nav" class="main-nav" aria-label="Main navigation">
+          <a href="index.html" class="active" aria-current="page">Home</a>
+          <a href="properties.html">Properties</a>
+          <a href="about.html">About</a>
+          <a href="contact.html">Contact</a>
+        </nav>
+      </div>
+    </header>
+    <main id="main" tabindex="-1">
+      <section class="hero section">
+        <div class="container">
+          <div class="row align-items-center g-5">
+            <div class="col-lg-6">
+              <p class="eyebrow">REAL ESTATE IN ASTANA</p>
+              <h1>A little more space.<br>A place of your own.</h1>
+              <p class="lead">Explore apartments, studios, and townhouses. Find a home that fits the way you live.</p>
+              <div class="button-row">
+                <a class="button" href="properties.html">Explore properties <span aria-hidden="true">↗</span></a>
+                <a class="simple-link" href="about.html">Meet Steppe Homes</a>
+              </div>
+              <p class="hero-note"><span class="status-dot"></span> A fresh start begins with a good address.</p>
+            </div>
+            <div class="col-lg-6">
+              <div class="hero-art">
+                <img src="assets/hero.svg" alt="Illustrated modern homes with balconies, trees, and a garden" width="800" height="680">
+                <div class="art-label">
+                  <span class="label-icon" aria-hidden="true">⌂</span>
+                  <div>
+                    <strong>Make room for living</strong>
+                    <span>Homes for every next chapter</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="section featured">
+        <div class="container">
+          <div class="section-heading">
+            <div>
+              <p class="eyebrow">A FEW PLACES TO BEGIN</p>
+              <h2>Featured homes</h2>
+            </div>
+            <a class="simple-link" href="properties.html">View all properties <span aria-hidden="true">↗</span></a>
+          </div>
+          <div class="row g-4">
+            <div class="col-md-6">
+              <article class="property-card" data-type="apartment" data-price="42000000">
+                <div class="property-image">
+                  <img src="assets/nexpoaura.jpg" alt="Illustration of Riverside Apartment" width="640" height="480">
+                  <span class="tag">For sale</span>
+                </div>
+                <div class="property-content">
+                  <p class="location">Mangilik El Avenue 57, Astana</p>
+                  <h2>Nexpo Aura</h2>
+                  <p class="property-specs">2 bedrooms · 76 m² · Apartment</p>
+                  <p class="property-description" hidden>A modern two-bedroom apartment with large windows, an open living area, and space for a small home office.</p>
+                  <div class="property-bottom">
+                    <strong>₸90,000,000</strong>
+                    <button class="text-button details-button" type="button" data-property="riverside" aria-label="View details for Riverside Apartment">View details <span aria-hidden="true">↗</span></button>
+                  </div>
+                </div>
+              </article>
+            </div>
+            <div class="col-md-6">
+              <article class="property-card" data-type="apartment" data-price="35000000">
+                <div class="property-image">
+                  <img src="assets/wtowersr.png" alt="Illustration of Courtyard Apartment" width="640" height="480">
+                  <span class="tag">For sale</span>
+                </div>
+                <div class="property-content">
+                  <p class="location">Turan Avenue 37/2, Astana</p>
+                  <h2>W Towers</h2>
+                  <p class="property-specs">3 bedrooms · 110 m² · Apartment</p>
+                  <p class="property-description" hidden>A spacious three-bedroom apartment with a large living room, a separate kitchen, and room for a family.</p>
+                  <div class="property-bottom">
+                    <strong>₸110,000,000</strong>
+                    <button class="text-button details-button" type="button" data-property="courtyard" aria-label="View details for Courtyard Apartment">View details <span aria-hidden="true">↗</span></button>
+                  </div>
+                </div>
+              </article>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="section section-soft">
+        <div class="container">
+          <div class="row g-4 align-items-center">
+            <div class="col-md-6">
+              <p class="eyebrow">YOUR NEXT STEP</p>
+              <h2>Have a home in mind?</h2>
+              <p>Tell us what matters to you, from your preferred area to the space you need.</p>
+            </div>
+            <div class="col-md-6 cta-action">
+              <a class="button" href="contact.html">Let’s talk <span aria-hidden="true">↗</span></a>
+            </div>
+          </div>
+        </div>
+      </section>
+      <dialog id="property-dialog" class="property-dialog" aria-labelledby="dialog-title">
+        <button type="button" class="dialog-close" aria-label="Close property details">×</button>
+        <img id="dialog-image" src="assets/nexpoaura.jpg" alt="" width="640" height="480">
+        <div class="dialog-body">
+          <p id="dialog-location" class="eyebrow"></p>
+          <h2 id="dialog-title"></h2>
+          <p id="dialog-specs"></p>
+          <p id="dialog-description"></p>
+          <p id="dialog-price" class="dialog-price"></p>
+          <a id="dialog-contact" class="button" href="contact.html">Ask about this home <span aria-hidden="true">↗</span></a>
+          <p class="small-note">Illustrative listing for a student project.</p>
+        </div>
+      </dialog>
+    </main>
+    <footer class="site-footer">
+      <div class="container footer-inner">
+        <div>
+          <a class="brand" href="index.html">Steppe<span>Homes</span></a>
+          <p>A place to start your next chapter.</p>
+        </div>
+        <div class="footer-note">
+          <a href="mailto:hello@steppehomes.example">steppehomes@gmail.com</a>
+          <p>© 2026 Steppe Homes · Student project · Sample listings</p>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>
